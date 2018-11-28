@@ -1,0 +1,351 @@
+body{
+    margin: 0px;
+}
+#wrapper{
+	background-image: url(svg/bg.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+#bunny{
+    width: 100vw;
+    height:50vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  
+}
+#bunnyBody{
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    z-index: 5;
+}
+.ears{
+    width: 10%;
+    position: absolute;
+}
+#rightEars{
+    right:38%;
+    top: -7%;  
+}
+#leftEars{
+    top: -7%;
+    left: 38%;
+}
+#bunnyHands{
+    width: 10%;
+    position: absolute;
+    left:45%;
+    top: 50%;
+    z-index: 5;
+}
+@keyframes hands{
+	50%{ top: 49%;}
+	100%{ top: 50%;}
+}
+#hole0{
+    width: 20%;
+    position: fixed;
+    left: 40%;
+    top: 70%;
+}
+#hole{
+    width: 15%;
+    position: fixed;
+    left: 42%;
+    top: 72%;
+    display: none;
+}
+#cloud1{
+    width: 10%;
+    top: 3%;
+    left: 5%;
+    position: absolute;  
+    animation: cloud1 15s alternate infinite;
+}
+#cloud2{
+    width: 10%;
+    top: 15%;
+    right: 5%;
+    position: absolute;   
+    animation: cloud2 15s alternate infinite;
+}
+
+#grass1{
+    bottom: -80px;
+    position: absolute;
+}
+
+
+#tree{
+    width:25vw;
+    height: 70vh;
+    position: absolute;
+    right: 10%;
+    top:-60%;
+    
+}
+#trunk{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 26%;
+    z-index: 1;
+}
+#grass2{
+    width: 20%;
+    left: 8%;
+    top: 56.5%;
+    position: fixed;
+    z-index: 2;
+}
+#treeleaves{
+	width: 20%;
+    position: absolute;
+    top: -60%;
+    right: 11%;
+	z-index: -1;
+    
+}
+
+@keyframes treesrustling{
+	0%{
+		left: -3%
+	}
+	50%{
+		left: 1%;
+	}
+	100%{
+		left: -3%
+	}
+	
+}
+
+.leaves{
+    width: 5%;
+    position: absolute;
+    z-index: 5;
+
+}
+#apple1{
+	width: 15%;
+	height: 25%;
+	position: absolute;
+	right: 13.5%;
+	top: 20%;
+	margin: auto;
+}
+#apple2{
+	width: 15%;
+	height: 25%;
+	position: absolute;
+	left: 24.5%;
+	top: 6%;
+	margin: auto;
+}
+.apples{
+	width: 30%;
+	height: 0%;
+}
+
+#a1,#a6{
+	width: 50%;
+    left: 20%;
+    top: 15%;
+	position: absolute;
+}
+#a2,#a7{
+	width: 50%;
+    left: -25%;
+    top: 50%;
+	position: absolute;
+}
+#a3,#a8{
+	width: 50%;
+    left: 50%;
+    bottom: 45%;
+	position: absolute;
+}
+#a4,#a9{
+	width: 50%;
+    left: 5%;
+    bottom: 10%;
+	position: absolute;
+}
+#a5, #a10{
+	width: 50%;
+    right: -15%;
+    bottom: 15%;
+	position: absolute;
+}
+
+
+#hungrymsg {
+	z-index: 5;
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	left: 70%;
+	bottom: 130px;
+	border-radius: 50px;
+	background-color: lightblue;
+	padding: 20px;
+	font-family: monospace;
+	font-size: 1em;
+    text-align: center;
+	display: none;
+}
+#feed{
+	height: 30px;
+	border-radius: 20px;
+	position: absolute;
+	left: 45px;
+	background-color: papayawhip;
+	font-family: monospace;
+	font-weight: 400;
+}
+
+
+#flowers{
+    width: 70vw;
+    height: 100px;
+    position: fixed;
+    bottom: 0%;
+    left: 12%;
+    
+}
+.flowers{
+    width: 5%;
+	height: 0%;
+    position: absolute;
+    bottom: 0%;
+}
+#flower2{
+	left: 20%;
+}
+#flower3{
+	left: 40%;
+}
+#flower4{
+	left: 60%;
+}
+#flower5{
+	left: 80%;
+}
+#flower6{
+	left: 100%;
+}
+
+#sun{
+	width: 10%;
+	position: absolute;
+	right: 30%;
+	top: 10%;
+}
+
+
+.apples:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+/* for 980px or less */
+      @media screen and (max-width: 980px) and (min-width: 701px) {
+
+		  #hungrymsg{
+			  width: 150px;
+			  height: 100px;
+			  
+		  } 
+		    #bunnyHands{
+		     top: 40%;
+		  }
+		  #hole0,#hole{
+			  top: 67%;
+		  }
+		   #leftEars, #rightEars{
+			  top: 0%;
+		  }
+		  .flowers{
+			  bottom: 24%;
+		  }
+       
+      }
+
+      /* for 700px or less */
+      @media screen and (max-width: 700px) and (min-width:481px){
+		  #hungrymsg{
+			  width: 150px;
+			  height: 100px;
+			  left: 25%;
+			 
+		  }#hole0, #hole{
+			  top: 67%;
+		  }
+		  #bunnyHands{
+		top: 40%;
+		  }
+		  		  #leftEars, #rightEars{
+			  top: 1%;
+		  }
+		   .flowers{
+			  top: -36%;
+		  }
+       
+
+      }
+
+      /* for 480px or less */
+      @media screen and (max-width: 480px) and (min-width:320px) {
+		  #hungrymsg{
+			  width: 150px;
+			  height: 100px;
+			   left: 25%;
+		  }
+		  #leftEars, #rightEars{
+			  top: 1%;
+		  }
+		  #hole0, #hole{
+			  top: 63%;
+		  }
+		  #bunnyHands{
+		top: 30%;
+		  }
+		  .flowers{
+			  top: -69%;
+		  }
+		  #sun{
+			  top: 25%;
+		  }
+       
+      }
+
+
+
